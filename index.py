@@ -36,9 +36,9 @@ def getChartData(datefrom, dateto, currency_pair, period):
 def test_run():
     currency_pair = 'BTC_ETH'
     # 300, 900, 1800, 7200, 14400, and 86400
-    period = '14400'
-    date_from = '2016-03-23'
-    date_to = '2017-03-30'
+    period = '86400'
+    date_from = '2017-01-01'
+    date_to = '2017-06-04'
 
     dates = pd.date_range(date_from, date_to, freq=period+'s')
     df = pd.DataFrame(index=dates)

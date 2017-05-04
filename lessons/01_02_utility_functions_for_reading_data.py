@@ -4,7 +4,7 @@ import os
 import pandas as pd
 
 
-def symbol_to_path(symbol, base_dir="data"):
+def symbol_to_path(symbol, base_dir="../data"):
     """Return CSV file path given ticker symbol."""
     return os.path.join(base_dir, "{}.csv".format(str(symbol)))
 

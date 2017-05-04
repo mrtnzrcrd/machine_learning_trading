@@ -11,7 +11,7 @@ def plot_selected(df, columns, start_index, end_index):
     plot_data(df)
 
 
-def symbol_to_path(symbol, base_dir="data"):
+def symbol_to_path(symbol, base_dir="../data"):
     return os.path.join(base_dir, "{}.csv".format(str(symbol)))
 
 
